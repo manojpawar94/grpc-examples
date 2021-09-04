@@ -1,0 +1,32 @@
+/*
+ * Author  : Manoj Pawar
+ * Website : goprogramminghub.com
+ *
+ * packaging protocol buffer example
+ */
+
+syntax = "proto3";
+
+// defining package to the message
+package io.github.manojpawar.user;
+
+// importing the SocialMedia message
+import "protocol-buffer-advance/social-media-with-package.proto";
+
+// it represent the user information
+message User {
+  // unique Id of the user
+  int64 user_id = 1;
+
+  // first name of the user
+  string first_name = 2;
+
+  // last name of the user
+  string last_name = 3;
+
+  // username of the account
+  string username = 4;
+
+  // social media account list
+  repeated io.github.manojpawar.media.SocialMedia social_media_accouts = 5;
+}

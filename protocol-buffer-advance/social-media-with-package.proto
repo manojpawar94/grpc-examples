@@ -1,0 +1,32 @@
+/*
+ * Author  : Manoj Pawar
+ * Website : goprogramminghub.com
+ *
+ * Social media protocal buffer with package io.github.manojpawar.media
+ */
+
+syntax = "proto3";
+
+package io.github.manojpawar.media;
+
+// It represent the social media account info of user
+message SocialMedia {
+  // Enum of the supported social media type account
+  enum SocialMediaType {
+    UNKNOW_SOCIAL_MEDIA = 0;
+    FACEBOOK = 1;
+    TWITTER = 2;
+    LINKED_IN = 3;
+    INSTAGRAM = 4;
+    SNAPCHAT = 5;
+  }
+
+  // social media type
+  SocialMediaType social_media_type = 1;
+
+  // url of the social media account
+  string social_media_account_link = 2;
+
+  // icon of social media platform. it must be a small png file bytes.
+  bytes social_media_icon = 3;
+}
