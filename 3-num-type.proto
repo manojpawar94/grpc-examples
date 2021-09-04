@@ -2,7 +2,7 @@
  * Author  : Manoj Pawar
  * Website : goprogramminghub.com
  *
- * Enum type definition in the proto
+ * Enum type definition example
  */
 
 syntax = "proto3";
