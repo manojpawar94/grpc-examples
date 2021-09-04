@@ -1,3 +1,10 @@
+/*
+ * Author  : Manoj Pawar
+ * Website : goprogramminghub.com
+ *
+ * Scalar type (int, float, string bytes, bool) declaration example 
+ */
+
 syntax = "proto3";
 
 message User {
