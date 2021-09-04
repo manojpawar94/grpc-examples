@@ -2,12 +2,12 @@
  * Author  : Manoj Pawar
  * Website : goprogramminghub.com
  *
- * Enum declaration in the proto
+ * Enum type definition in the proto
  */
 
 syntax = "proto3";
 
-message Vehicel {
+message Vehicle {
 
   // Supported engine types
   enum EngineType {
