@@ -1,0 +1,25 @@
+/*
+ * Author  : Manoj Pawar
+ * Website : goprogramminghub.com
+ *
+ * import message example
+ */
+
+syntax = "proto3";
+
+// import the messages from other proto files.
+// While importing we have to provide complete path of the file from root of the
+// project directory.
+import "protocol-buffer-advance/processor.proto";
+import "protocol-buffer-advance/price.proto";
+
+message Computer {
+  // brand of the computer
+  string brand = 1;
+
+  // processor information of computer
+  Processor processor = 2;
+
+  // selling price of the computer
+  Price selling_price = 3;
+}

@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message Price {
+  string currency_code = 1;
+  int32 units = 2;
+  int32 nanos = 3;
+}
