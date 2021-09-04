@@ -2,7 +2,7 @@
  * Author  : Manoj Pawar
  * Website : goprogramminghub.com
  *
- * Scalar type (int, float, string bytes, bool) declaration example 
+ * Scalar type (int, float, string bytes, bool) definition example 
  */
 
 syntax = "proto3";
