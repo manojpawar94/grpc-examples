@@ -1,0 +1,15 @@
+/*
+ * Author  : Manoj Pawar
+ * Website : goprogramminghub.com
+ *
+ * Latitude Longitude (example: -33.865382, 151.192861). With fields:
+ * Latitude (number)
+ * Longitude (number)
+ */
+
+syntax = "proto3";
+
+message GeoLocation {
+  float latitude = 1;
+  float longitude = 2;
+}

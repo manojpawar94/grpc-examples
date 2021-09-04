@@ -1,0 +1,24 @@
+/*
+ * Author  : Manoj Pawar
+ * Website : goprogramminghub.com
+ *
+ * Money (example: USD 35.42  (35 = integral, 42 = decimal)):
+ * Currency Code (string)
+ * Integral amount (number)
+ * Decimal amount (number)
+ */
+
+syntax = "proto3";
+
+// It represents amount of money along with its currency type.
+message Money {
+    // Three letter currency code value defined in ISO 4217.
+    string currency_code = 1;
+
+    // The whole unit of the amount.
+    // For example if 'currency code' is "USD", then 1 unit is one US dollar. 
+    int64 units = 2;
+
+
+    int64 nanos = 3;
+}

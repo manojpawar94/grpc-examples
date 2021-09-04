@@ -1,0 +1,25 @@
+/*
+ * Author  : Manoj Pawar
+ * Website : goprogramminghub.com
+ *
+ * Date (example: 2018/03/15). With fields:
+ * Year (number)
+ * Month (number)
+ * Day (number)
+ */
+
+syntax = "proto3";
+
+message Date {
+  // Year value of the date. It must be between 1 to 9999. If 0 don't specify
+  // the year value.
+  int32 year = 1;
+
+  // Month value of the date. It must be between 1 to 12. If 0 don't specify the
+  // month value.
+  int32 month = 2;
+
+  // Day value of the date. It must be between 1 to 31. If you are specifying
+  // the year/month day value is not significant.
+  int32 day = 3;
+}

@@ -1,0 +1,23 @@
+/*
+ * Author  : Manoj Pawar
+ * Website : goprogramminghub.com
+ *
+ * Person (example: Michael Jordan):
+ * First Name
+ * List of middle names
+ * Last Name
+ */
+
+syntax = "proto3";
+
+// It represent the person.
+message Person {
+  // first name of the person as per sign in details
+  string first_name = 1;
+
+  // middle name of the person as per sign in details
+  string middle_name = 2;
+
+  // last name of the person as per sign in details
+  string last_name = 3;
+}
