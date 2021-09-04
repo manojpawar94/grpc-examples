@@ -1,0 +1,37 @@
+/*
+ * Author  : Manoj Pawar
+ * Website : goprogramminghub.com
+ *
+ * Multiple messages in single file example
+ */
+
+syntax = "proto3";
+
+// It represent the person.
+message Person {
+  // first name of the person as per sign in details
+  string first_name = 1;
+
+  // middle name of the person as per sign in details
+  string middle_name = 2;
+
+  // last name of the person as per sign in details
+  string last_name = 3;
+
+  // Person's birthday
+  Date birthday = 4;
+}
+
+message Date {
+  // Year value of the date. It must be between 1 to 9999. If 0 don't specify
+  // the year value.
+  int32 year = 1;
+
+  // Month value of the date. It must be between 1 to 12. If 0 don't specify the
+  // month value.
+  int32 month = 2;
+
+  // Day value of the date. It must be between 1 to 31. If you are specifying
+  // the year/month day value is not significant.
+  int32 day = 3;
+}
