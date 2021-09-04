@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+/*
+ * User is used to identify the User across the system.
+ */
+message User {
+  int64 user_id = 1;     // Unique ID associated with User
+  string first_name = 2; // first name as per the sign up form
+  string last_name = 3;  // last name as per the sign up form
+
+  // profile picture is a small .png file
+  bytes profile_picture = 4;
+
+  bool is_verified = 5;
+
+  // height is represented in the centimeters
+  float height = 6;
+
+  // list of phone numbers that are optional provide at sign up
+  repeated string phone_numbers = 7;
+}
+
+/*
+* Default value
+* -------------------------------------------------------------------
+* Each field if value is not set it has asscoiated default value.
+* bool     : false
+* number   : 0
+* string   : empty string
+* list     : empty list
+* enum     : first value
+* repeated : empty list
+* There is no concept of required field or optional field in protocol buffer
+*/

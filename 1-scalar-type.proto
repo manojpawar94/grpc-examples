@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+message User {
+  int64 user_id = 1;
+  string first_name = 2;
+  string last_name = 3;
+  bytes profile_picture = 4;
+  bool is_verified = 5;
+  float height = 6;
+}
+
+/*
+* Tag
+* -------------------------------------------------------------------
+* Tag 9000 to 19990 are reserved by Google.
+* Tag 1 to 15 must be used for more frequently populating data use as byte 1
+* Tag 16 to 2047 used for less frequently populating data use as byte 2
+*/
