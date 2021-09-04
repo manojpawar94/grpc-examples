@@ -1,3 +1,11 @@
+/*
+ * Author  : Manoj Pawar
+ * Website : goprogramminghub.com
+ *
+ * Repeated type definitation example
+ */
+
+
 syntax = "proto3";
 
 /*
