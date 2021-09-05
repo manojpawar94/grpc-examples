@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package io.github.manojpawar94.proto.example;
+
+import "protocol-buffer-generate-code/proto/address.proto";
+
+message Student {
+
+  int64 student_id = 1;
+
+  string first_name = 2;
+
+  string last_name = 3;
+
+  enum Standard {
+    UNKNOWN_STD = 0;
+    FIFTH_STD = 1;
+    SIXTH_STD = 2;
+    SEVENTH_STD = 3;
+    EIGHT_STD = 4;
+    NINE_STD = 5;
+    TENTH_STD = 6;
+  }
+
+  Standard standard = 4;
+
+  repeated Address addresses = 5;
+}
