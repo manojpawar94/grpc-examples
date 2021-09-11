@@ -1,0 +1,1 @@
+protoc -I=. --python_out=./protocol-buffer-generate-code/python ./protocol-buffer-generate-code/proto/*.proto

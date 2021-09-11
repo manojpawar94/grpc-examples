@@ -1,0 +1,1 @@
+protoc -I=. --java_out=./protocol-buffer-generate-code/java ./protocol-buffer-generate-code/proto/*.proto

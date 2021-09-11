@@ -1,0 +1,1 @@
+protoc -I=. --go_out=./protocol-buffer-generate-code/go ./protocol-buffer-generate-code/proto/address.proto
