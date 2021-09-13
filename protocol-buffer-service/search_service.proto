@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+message Person {
+    int32 person_id = 1;
+    string first_name = 2;
+    string last_name = 3;
+    string email = 4;
+}
+
+message PersonSearchRequest {
+  oneof search_query {
+    int32 person_id = 1;
+    string first_name = 2;
+    string last_name = 3;
+    string email = 4;
+  }
+}
+
+message PersonSearchResponse {
+    repeated Person persons = 1;
+}
+
+service PersonSearchService {
+    rpc Search(PersonSearchRequest) returns (PersonSearchResponse);
+}
+
